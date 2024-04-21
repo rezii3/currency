@@ -1,0 +1,24 @@
+<div class="container">
+<table>
+  <tr>
+    <th>ვალუტა</th>
+    <th>ოფიციალური კურსი</th>
+    <th>კომერციული კურსი</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>ყიდვა</td>
+    <td>გაყიდვა</td>
+  </tr>
+  <ng-container *ngFor="let up of money">
+  <tr>
+    <td> <span>{{up.ccy}}</span> {{up.rateWeight}}  {{up.name}}</td>
+    <td>{{up.currentRate}}</td>
+    <td>{{up.buyRate}}</td>
+    <td>{{up.sellRate}}</td>
+  </tr>
+  </ng-container>
+</table>
+</div>
